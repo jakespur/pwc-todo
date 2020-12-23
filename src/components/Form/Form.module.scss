@@ -1,0 +1,83 @@
+@import '../../styles/colors';
+
+.container {
+
+  legend {
+    padding: 0.2em 0.5em;
+    border: 1px solid $border-color;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+
+      label {
+        flex: none;
+        display: block;
+        width: 80px;
+        font-weight: bold;
+        font-size: 1.25em;
+      }
+
+      input, select {
+        flex-grow: 1;
+        padding: 0.5rem;
+      }
+
+      input[type=submit] {
+        background-color: $button-primary-action-color;
+        border: none;
+        color: $text-white;
+        padding: 1.25rem 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  fieldset {
+    padding: 10px;
+    border: 1px solid $border-color;
+  }
+}
+
+.required {
+  margin-left: 5px;
+  color: $required-color;
+}
+
+.warningPanel {
+  display: flex;
+  flex-direction: column;
+  background-color: $warning-background;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  h2, h3, p {
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+
+  p:before {
+    content:"• ";
+  }
+
+  p {
+    font-weight: 700;
+    text-align: left;
+  }
+}

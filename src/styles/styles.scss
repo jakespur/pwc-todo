@@ -1,0 +1,28 @@
+@import 'small';
+@import 'colors';
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+p { text-align: center; }
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $background-color;
+    color: $font-color;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    @import 'medium';
+} /* end of media query */
+
+@media only screen and (min-width: 1140px) {
+    @import 'large';
+} /* end of media query */
