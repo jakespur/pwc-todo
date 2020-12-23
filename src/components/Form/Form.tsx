@@ -89,7 +89,13 @@ export const Form = ({ onAddTodo }: ToDoFormProps) => {
               <span>Priority</span>
               <span className={styles.required}>*</span>
             </label>
-            <select value={formState.priority} title={'Please select the todo priority'} required onChange={onFieldChange} name={'priority'}>
+            <select
+              value={formState.priority}
+              title={'Please select the todo priority'}
+              required
+              onChange={onFieldChange}
+              name={'priority'}
+            >
               <option value={''}>Please select...</option>
               {Array.from(PriorityLevelDisplay).map(([id, label]) => (
                 <option key={id} value={id}>

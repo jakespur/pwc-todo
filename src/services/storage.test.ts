@@ -1,9 +1,4 @@
-import {
-  PriorityLevel,
-  ToDoStateUpdate,
-  TodoStatus,
-  UnPersistedToDo,
-} from '../interfaces/interfaces';
+import { PriorityLevel, ToDoStateUpdate, TodoStatus, UnPersistedToDo } from '../interfaces/interfaces';
 import { addToDo, bulkUpdateStatus, clear } from './storage';
 
 describe('ToDo storage', () => {
